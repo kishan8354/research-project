@@ -1,12 +1,25 @@
-# Preparation milestones
+# Work plan
 
-Dates below are a proposed preparation schedule, not completed work or supervisor commitments.
+## 1. Read and organize papers
 
-| Period | Focus | Evidence to bring to a meeting |
-|---|---|---|
-| 23–31 October 2026 | Organize literature; review tensor shapes, Dataset/DataLoader and Git basics | Catalogue plus one paper explained in your own words |
-| November 2026 | Finish a small training/evaluation exercise; read grounding papers | Runnable example, held-out evaluation, daily log and several reviewed paper notes |
-| December 2026 | Check candidate model/data access and measure one feasible baseline | Environment, exact command, metrics, hardware and error examples |
-| January 2027 | Choose a first project with the supervisor | Agreed question, baseline, dataset, metric and feasible first milestone |
+- Review papers on VLM hallucination, visual grounding and medical VQA.
+- Record datasets, input types, methods and evaluation metrics.
+- Compare the assumptions made by each method.
 
-Immediate next action: review P01 or P03, identify input/output tensors and prerequisites, and document questions. Data permissions and hardware availability remain unknown.
+## 2. Set up a baseline
+
+- Check model, data and GPU requirements.
+- Run a small evaluation on a fixed dataset split.
+- Save the configuration, command and output.
+
+## 3. Compare methods
+
+- Keep the model, test examples and decoding settings consistent.
+- Compare standard decoding with grounding or counterfactual methods.
+- Measure answer quality, hallucination and inference cost.
+
+## 4. Review errors
+
+- Look at answers that change under image interventions.
+- Check language shortcuts and token-position effects.
+- Use the error analysis to decide what to test next.

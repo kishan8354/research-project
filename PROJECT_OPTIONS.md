@@ -1,15 +1,35 @@
-# Candidate directions — decision pending
+# Research directions
 
-These are planning proposals based on the local paper collection. They are not novelty claims and have not been approved by the supervisor.
+My main focus is hallucination detection and mitigation in vision-language models, especially medical VLMs.
 
-| Direction | First concrete deliverable | Relevant papers | Main dependency | Later question |
-|---|---|---|---|---|
-| Evaluate medical VLM hallucinations | Run one baseline on an agreed dataset subset and audit incorrect answers | P01, P03, P04, P05 | Model/data access, inference compute, evaluation labels | Do visual interventions improve grounding beyond language shortcuts? |
-| Compare token pruning | Compare a full-token model with one pruning baseline using identical examples and hardware | P07, P08 | Transformer internals and instrumentation | What is the accuracy, hallucination and latency trade-off? |
-| Concept-based model debugging | Reproduce a small classification baseline and document concept interventions | P06 | Suitable accessible dataset and concept labels | Which concepts reveal spurious correlations? |
+## Visual grounding and hallucination
 
-## Select in January 2027
+I want to compare standard decoding with methods that use image evidence more directly. The first step is to run a baseline on a fixed dataset split and examine where its answers go wrong.
 
-Before committing to a direction, demonstrate that you can explain and run a small PyTorch training loop, handle dataset splits, use Git, read tensor shapes, and record reproducible evaluations. Then assess each option on data access, hardware fit, implementation complexity, supervisor interest and the clarity of the first measurable question.
+Related papers: P01, P03, P04 and P05 in [the reading list](RELATED_PAPERS.md).
 
-Training-free methods can still require expensive repeated inference or additional models. Check actual hardware fit rather than assuming they are easy to run. Begin with a baseline before changing the method.
+Questions I want to study:
+
+- Is the answer supported by the image?
+- Does changing or masking the relevant image region change the answer?
+- Does a detector use visual evidence, or mainly language and token-position shortcuts?
+
+## Image-text alignment
+
+I want to understand how alignment distillation and preference optimization affect grounding and answer quality.
+
+Related papers: P01 and P02.
+
+## Visual token pruning
+
+I am interested in the trade-off between inference cost, task performance and hallucination when visual tokens are removed.
+
+Related papers: P07 and P08.
+
+## First steps
+
+- Check model and dataset access.
+- Run one baseline and record the environment and exact command.
+- Use the same examples and settings when comparing methods.
+- Record accuracy, hallucination metrics, latency and memory use where relevant.
+- Review errors before making changes to the method.

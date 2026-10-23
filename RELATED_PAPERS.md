@@ -1,26 +1,26 @@
-# Papers closely relevant to candidate projects
+# Related papers
 
-Project scope is provisional. Sources below come from the 11 supplied PDFs; none has been reproduced here.
+I collect papers here on VLM hallucination, visual grounding and efficient inference. The full catalogue contains dataset, task and metric details.
 
-## Existing implementation to review
+## Related implementation
 
-[Kishan’s VGS-Decoding repository](https://github.com/kishan8354/VGS-Decoding) is closely related to the medical-grounding direction. It describes an independent implementation of visual-grounding-guided decoding. Treat it as an existing project to inspect and evaluate, with its assumptions documented separately; this account review did not execute or validate it. It is additional context, outside the 11-PDF catalogue below.
+[My VGS-Decoding repository](https://github.com/kishan8354/VGS-Decoding) contains an independent implementation of visual-grounding-guided decoding for medical VLMs. It is useful context for comparing the methods below.
 
 ## Medical VLM hallucination and grounding
 
-Direct method and evaluation references for a possible medical-grounding project. P05 supplies general-domain evaluation controls, whose medical validity must be tested.
+These papers cover medical grounding methods and hallucination evaluation. P05 studies general-domain detectors; its evaluation controls are also relevant when designing medical VLM experiments.
 
 | Paper | Year | Data / dimension | Task and relevance | Code |
 |---|---|---|---|---|
 | [P01: Enhancing Medical Large Vision-Language Models via Alignment Distillation](https://github.com/Aofei-Chang/MedAlign) | 2026 | MIMIC-CXR; IU-Xray; SLAKE; VQA-RAD; PathVQA; OmniMedVQA; 2D | Medical report generation; Medical VQA. A direct project reference for studying visual grounding through alignment distillation. | [Author link](https://github.com/Aofei-Chang/MedAlign) |
 | [P02: Beyond Surface Features: Advancing Medical Vision-Language Alignment via Dynamic Evidence-Guided Preference Optimization](https://aclanthology.org/2026.acl-long.1200/) | 2026 | SLAKE (English subset); VQA-RAD; MIMIC-CXR; IU-Xray; 2D | Medical VQA; Medical report generation. Useful for comparing adaptive preference learning with distillation and inference-time interventions. | Not identified in supplied PDF |
-| [P03: Hallucination Detection and Correction in Medical VLMs via Counter-Evidence Verification](https://arxiv.org/abs/2606.18609v1) | 2026 | VQA-RAD; MIMIC-VQA; MIMIC-CXR; IU-Xray; 2D | Medical VQA; Medical report generation; Hallucination detection; Hallucination correction. A candidate for an inference-based project on medical visual grounding and correction. | Not identified in supplied PDF |
+| [P03: Hallucination Detection and Correction in Medical VLMs via Counter-Evidence Verification](https://arxiv.org/abs/2606.18609v1) | 2026 | VQA-RAD; MIMIC-VQA; MIMIC-CXR; IU-Xray; 2D | Medical VQA; Medical report generation; Hallucination detection; Hallucination correction. Relevant to medical visual grounding and inference-time hallucination correction. | Not identified in supplied PDF |
 | [P04: Counterfactual Anatomy-guided Spatial-Temporal Decoding for Annotation-Free Hallucination Mitigation in Medical VLMs](https://arxiv.org/abs/2608.17427v1) | 2026 | SLAKE; MIMIC-CXR (VQA formulation); 2D | Medical VQA; Decoding-time hallucination mitigation. A closely related inference-time alternative to CoEV, focused on anatomy-aware decoding. | [Author link](https://github.com/csyifan/CAST) |
 | [P05: Robustness of Internal Signals for Hallucination Detection in Vision-Language Models](https://arxiv.org/abs/2610.27041v1) | 2026 | MSCOCO 2014; Objects365 (generalization); 2D | Object hallucination detection in image captions; Robustness and modality sensitivity; Detector ensembling. Motivates token-position and image-ablation controls when evaluating a detector. | Not identified in supplied PDF |
 
 ## Visual token efficiency
 
-Direct references for a separate efficiency project. Medical transfer or combining pruning with grounding would be a hypothesis to investigate.
+These papers study visual token pruning. I am interested in how pruning affects hallucination and visual grounding as well as inference cost.
 
 | Paper | Year | Data / dimension | Task and relevance | Code |
 |---|---|---|---|---|
@@ -29,7 +29,7 @@ Direct references for a separate efficiency project. Medical transfer or combini
 
 ## Alternative and background
 
-P06 supports a concept-intervention alternative. The surveys and broad benchmark paper support framing and background rather than defining the implementation.
+P06 covers concept-based model debugging. The surveys and broad benchmark paper provide background on hallucination, post-training and vision evaluation.
 
 | Paper | Year | Data / dimension | Task and relevance | Code |
 |---|---|---|---|---|

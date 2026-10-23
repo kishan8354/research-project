@@ -1,9 +1,20 @@
-# Preparation note — 23 October 2026
+# Research notes — 23 October 2026
 
-Supervisor’s request from 20 October 2026: maintain a GitHub paper collection categorized by year, data, 2D/3D inputs, evaluated task and related details; maintain a project repository with closely relevant papers; consider choosing the first project in January based on coding comfort.
+## Focus
 
-January is interpreted as January 2027 because the request was made in October 2026.
+Computer vision and vision-language hallucination, with an emphasis on medical visual grounding.
 
-Prepared locally: a survey catalogue of 11 supplied PDFs, a project workspace with related literature and candidate directions, and a daily-learning repository. GitHub publication is pending account connection.
+## Paper organization
 
-Questions to resolve: final survey scope, available GPU, dataset/model access, first baseline and expected meeting cadence. No project direction or experimental result is finalized.
+I have organized 11 papers by year, datasets, input dimensions, tasks and metrics. The collection includes hallucination mitigation, alignment, token pruning and background surveys.
+
+## Questions to investigate
+
+- Which models and datasets can I run with the available compute?
+- Which hallucination metrics best match the task?
+- How can I check whether a method actually uses image evidence?
+- What is a fair baseline for comparing decoding and grounding methods?
+
+## Next step
+
+Review one grounding paper and check the model, data and evaluation requirements for a baseline.
