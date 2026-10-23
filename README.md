@@ -11,3 +11,7 @@ The supplied collection suggests medical VLM hallucination/grounding and visual-
 - [Supervisor discussion notes](meetings/2026-10-23-preparation.md)
 
 Once a direction is selected, record the research question, baseline, dataset, metric and compute budget here, then add implementation code. Keep actual runs and conclusions in experiment records. The separate survey repository maintains the wider literature catalogue.
+
+## Existing related work
+
+Kishan’s [VGS-Decoding repository](https://github.com/kishan8354/VGS-Decoding) describes an independent implementation of visual-grounding-guided decoding for medical VLM hallucination mitigation. Review its current code, assumptions, and recorded evaluations when choosing a baseline for this workspace. Its README was inspected during account review; its code and reported results have not been independently verified here.

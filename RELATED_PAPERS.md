@@ -2,6 +2,10 @@
 
 Project scope is provisional. Sources below come from the 11 supplied PDFs; none has been reproduced here.
 
+## Existing implementation to review
+
+[Kishan’s VGS-Decoding repository](https://github.com/kishan8354/VGS-Decoding) is closely related to the medical-grounding direction. It describes an independent implementation of visual-grounding-guided decoding. Treat it as an existing project to inspect and evaluate, with its assumptions documented separately; this account review did not execute or validate it. It is additional context, outside the 11-PDF catalogue below.
+
 ## Medical VLM hallucination and grounding
 
 Direct method and evaluation references for a possible medical-grounding project. P05 supplies general-domain evaluation controls, whose medical validity must be tested.
