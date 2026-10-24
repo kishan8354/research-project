@@ -16,12 +16,4 @@ I am also looking at image-text alignment, counterfactual decoding and visual to
 
 [VGS-Decoding](https://github.com/kishan8354/VGS-Decoding) is my independent implementation of visual-grounding-guided decoding for medical VLMs. I will use the code and its assumptions as a starting point when comparing methods.
 
-## What I want to study
-
-- When a VLM gives an answer that is not supported by the image.
-- Whether visual grounding improves answers beyond language-only shortcuts.
-- How hallucination, answer quality and inference cost change across methods.
-
-I will record experiment settings, commands and measured results in the experiment notes.
-
 [Full paper collection](https://github.com/kishan8354/survey-paper-collection) · [Daily learning](https://github.com/kishan8354/daily-learning)
