@@ -12,8 +12,3 @@ I am also looking at image-text alignment, counterfactual decoding and visual to
 - [Experiment template](experiments/TEMPLATE.md)
 - [Research notes](meetings/2026-10-23-preparation.md)
 
-## Related implementation
-
-[VGS-Decoding](https://github.com/kishan8354/VGS-Decoding) is my independent implementation of visual-grounding-guided decoding for medical VLMs. I will use the code and its assumptions as a starting point when comparing methods.
-
-[Full paper collection](https://github.com/kishan8354/survey-paper-collection) · [Daily learning](https://github.com/kishan8354/daily-learning)
